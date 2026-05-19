@@ -19,6 +19,14 @@ const attendenceSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    imageUrl: {
+      type: String,
+      default: null,
+    },
+    telegramFileId: {
+      type: String,
+      default: null,
+    },
   },
   { timestamps: true }
 );

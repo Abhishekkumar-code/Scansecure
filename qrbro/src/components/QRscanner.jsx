@@ -22,13 +22,14 @@ const QRScanner = ({ onScan }) => {
 
         onScan(decodedText);
 
-        // har 2min baad rescan hoga
+        // har 2imn baad rescan hoga
         pauseScan = true;
         setTimeout(() => {
           pauseScan = false;
-        }, 2000);
+        }, 4000);
       },
       (errorMessage) => {
+      console.log("this is error");
       
       }
     );
